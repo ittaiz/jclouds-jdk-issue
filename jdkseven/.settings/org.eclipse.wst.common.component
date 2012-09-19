@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="jdkseven">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="cloudfiles-us-1.5.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cloudfiles-us/cloudfiles-us">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cloudfiles-1.5.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cloudfiles/cloudfiles">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="swift-1.5.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/swift/swift">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="openstack-keystone-1.5.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/openstack-keystone/openstack-keystone">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jclouds-core-1.5.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jclouds-core/jclouds-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="openstack-common-1.5.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/openstack-common/openstack-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jclouds-blobstore-1.5.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jclouds-blobstore/jclouds-blobstore">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="jdkseven"/>
+        <property name="java-output-path" value="/jdkseven/target/classes"/>
+    </wb-module>
+</project-modules>

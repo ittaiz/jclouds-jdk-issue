@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jclouds.bugs</groupId>
+	<artifactId>jdkseven</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId> javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jclouds.provider</groupId>
+			<artifactId>cloudfiles-us</artifactId>
+			<version>${jclouds.version}</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<jclouds.version>1.5.0-SNAPSHOT</jclouds.version>
+		<compiler.version>1.7</compiler.version>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<verbose>true</verbose>
+					<encoding>UTF-8</encoding>
+					<compilerVersion>${compiler.version}</compilerVersion>
+					<source>${compiler.version}</source>
+					<target>${compiler.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<packaging>war</packaging>
+</project>
